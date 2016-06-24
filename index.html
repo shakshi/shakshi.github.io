@@ -1,5 +1,26 @@
-Hello world check out my homepage!
-
-
-----------------------------
-http://shakshi.github.io
+<html>
+	<head>
+		<title> 2048 Game </title>
+		<link rel='stylesheet'  type='text/css' href='css/2048.css'>
+	</head>
+	
+	<body>
+		<div id='gameContainer'>
+		</div>
+		
+		<script src='js/createGame.js'></script>
+		<script src='js/swipeDetect.js'></script>
+		<script src='js/2048.js'></script>
+		
+		<script>
+		function init()
+		{	createGameLayout.init('gameContainer',4);
+			gamePlay.init(4);
+			
+		}
+		
+		window.addEventListener('load',init);
+		</script>
+	</body>
+</html>
+		
